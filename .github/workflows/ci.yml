@@ -14,9 +14,9 @@ jobs:
       postgres:
         image: postgres:13
         env:
-          POSTGRES_DB: test_db
-          POSTGRES_USER: user
-          POSTGRES_PASSWORD: pass
+          POSTGRES_DB: blog_db
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: kevito11
         ports: ['5432:5432']
         options: >-
           --health-cmd pg_isready
