@@ -19,3 +19,8 @@ services:
       - "8000:8000"
     depends_on:
       - db
+    environment:
+      - POSTGRES_HOST=db
+      - POSTGRES_DB=blog_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=kevito11

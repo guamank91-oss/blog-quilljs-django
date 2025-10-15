@@ -23,9 +23,9 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'django-insecure-0sb&bub+w3=re17das_
 DEBUG = os.getenv('DJANGO_DEBUG', '1') != '0'
 ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', 'localhost 127.0.0.1').split()
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+##DEBUG = True
 
-ALLOWED_HOSTS = []
+##ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': os.environ.get('POSTGRES_DB', 'blog_db'),
         'USER': os.environ.get('POSTGRES_USER', 'postgres'),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'kevito11'),
-        'HOST': os.environ.get('POSTGRES_HOST', 'db'),  # Valor por defecto 'db' para Docker
+        'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),  # Valor por defecto 'db' para Docker
         'PORT': os.environ.get('POSTGRES_PORT', '5432'),
     }
 }
