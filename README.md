@@ -20,6 +20,7 @@ Visualización de posts en tarjetas Bootstrap.
 Soporte para emojis y caracteres especiales.
 
 Acceso al panel /admin para gestión de contenido.
+excelente
 
 📌 Rutas Clave
 / → Lista de publicaciones.
